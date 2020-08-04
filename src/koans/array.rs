@@ -21,6 +21,7 @@ fn array_empty() {
 #[test]
 #[should_panic]
 #[allow(const_err)]
+#[allow(unconditional_panic)]
 fn out_of_index() {
     let arr: [&'static str; 5] = ["rust", "is", "mostly", "for", "nerds"];
     arr[6];
